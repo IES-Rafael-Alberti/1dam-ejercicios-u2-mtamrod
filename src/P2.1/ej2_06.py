@@ -1,5 +1,7 @@
 def grupo(sexo, nombre):
-    if (sexo=="F" and nombre<"M") and (sexo=="M" and nombre>"N"):
+    nombre = nombre.upper()
+    sexo = sexo.upper()
+    if (sexo=="F" and nombre<"M") or (sexo=="M" and nombre>"N"):
         return "Grupo A"
     else:
         return "Grupo B"
